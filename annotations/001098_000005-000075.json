@@ -1,0 +1,146 @@
+{
+  "clip_id": "sft-positive-001098-000005-000075",
+  "annotation_source": "checklist",
+  "observation_tags": {
+    "collision_type": "vehicle_object",
+    "environment": {
+      "weather": "sunny",
+      "lighting": "day",
+      "scene_type": "highway",
+      "road_geometry": "arterials"
+    },
+    "scene_hazards": [
+      "deformed",
+      "road_blocked",
+      "debris"
+    ],
+    "damage_severity": "",
+    "vehicle_position": "",
+    "incident_phase": "",
+    "ego_role": "",
+    "vru_status": {
+      "pedestrian": "",
+      "cyclist": "",
+      "motorcyclist": ""
+    },
+    "involved_parties": [
+      "vehicle",
+      "fixed_object"
+    ],
+    "ego_involved": null
+  },
+  "applicable_chunks": [
+    "jp-doukoho-72-1",
+    "jp-fdma-jushoukan",
+    "jp-shonan-mc-koerinkijiko",
+    "jp-shonan-mc-genba-anzen",
+    "jp-shonan-mc-shudan-saigai",
+    "jp-fdma-fusoso",
+    "jp-fdma-119-tier-definition",
+    "jp-fdma-kinkyudo-4dankai"
+  ],
+  "pov_structured": {
+    "pov_1": {
+      "incident_summary": "A black cat hits a guardrail, causing scattered debris on the road; the impact is medium; no injury is visible",
+      "urgency": "non_urgent",
+      "units": [
+        {
+          "text": "Traffic accident — driver's duty to report; scene record",
+          "cite": [
+            "jp-doukoho-72-1"
+          ],
+          "unit": "police"
+        }
+      ],
+      "coordination": [
+        {
+          "text": "Request traffic control in coordination with the road authority and police",
+          "cite": [
+            "jp-shonan-mc-shudan-saigai"
+          ]
+        }
+      ]
+    },
+    "pov_2": {
+      "do": [
+        {
+          "text": "Stop the vehicle and turn on hazard lights",
+          "cite": [
+            "general-safety"
+          ]
+        },
+        {
+          "text": "Call 110 and report the location, time, and damage",
+          "cite": [
+            "jp-doukoho-72-1"
+          ]
+        },
+        {
+          "text": "If no one needs urgent care, visit a clinic yourself; re-call 119 if symptoms worsen",
+          "cite": [
+            "jp-fdma-fusoso"
+          ]
+        },
+        {
+          "text": "If vehicles are drivable and no one is hurt, move them off the live lane",
+          "cite": [
+            "jp-doukoho-72-1"
+          ]
+        },
+        {
+          "text": "If possible, remove the debris as much as possible from the road",
+          "cite": [
+            "jp-shonan-mc-genba-anzen"
+          ]
+        }
+      ],
+      "warn": [
+        {
+          "text": "Watch for following traffic — secondary-collision risk",
+          "cite": [
+            "jp-shonan-mc-genba-anzen"
+          ]
+        }
+      ],
+      "dont": [
+        {
+          "text": "Do not leave the scene before reporting",
+          "cite": [
+            "jp-doukoho-72-1"
+          ]
+        }
+      ]
+    },
+    "pov_3": {
+      "mechanism": {
+        "text": "Low-energy collision, occupants appear uninjured",
+        "cite": [
+          "jp-shonan-mc-koerinkijiko"
+        ]
+      },
+      "load_and_go": "not_applicable",
+      "destination": "none (no transport)",
+      "check": [
+        {
+          "text": "Confirm occupants uninjured — ABC + consciousness",
+          "cite": [
+            "jp-fdma-jushoukan"
+          ]
+        }
+      ],
+      "equipment": []
+    }
+  },
+  "notes": "",
+  "annotated_at": "2026-06-06T18:45:42",
+  "mmau_source": {
+    "video_id": 1098,
+    "type_id": 36,
+    "frame_range": [
+      5,
+      75
+    ],
+    "path_hint": "CAP-DATA/36/001098/images/",
+    "note": "Path relative to the MM-AU CAP-DATA root (github.com/jeffreychou777/LOTVS-MM-AU). frame_range is the [start,end] frame-index window (inclusive-exclusive as extracted) this annotation/clip covers within that source video."
+  }
+}

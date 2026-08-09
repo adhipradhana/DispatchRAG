@@ -1,0 +1,158 @@
+{
+  "clip_id": "sft-positive-009733-000050-000220",
+  "annotation_source": "checklist",
+  "observation_tags": {
+    "collision_type": "vehicle_pedestrian",
+    "involved_parties": [],
+    "environment": {
+      "weather": "snowy",
+      "lighting": "day",
+      "scene_type": "urban",
+      "road_geometry": "arterials"
+    },
+    "scene_hazards": [
+      "possible_injury"
+    ],
+    "damage_severity": "",
+    "vehicle_position": "",
+    "incident_phase": "",
+    "ego_role": "",
+    "vru_status": {
+      "pedestrian": "",
+      "cyclist": "",
+      "motorcyclist": ""
+    },
+    "vru_post_status": "moving_cannot_stand"
+  },
+  "applicable_chunks": [
+    "jp-doukoho-72-1",
+    "jp-fdma-119-tier-definition",
+    "jp-jrc-bls-recognition",
+    "jp-minpo-698-good-samaritan",
+    "jp-shonan-mc-koerinkijiko",
+    "jp-fdma-jushoukan",
+    "jp-shonan-mc-load-and-go",
+    "jp-shonan-mc-grade-classification"
+  ],
+  "pov_structured": {
+    "pov_1": {
+      "incident_summary": "The ego-car hits a pedestrian; the pedestrian is moving but cannot stand up",
+      "urgency": "urgent",
+      "units": [
+        {
+          "text": "Traffic accident — driver's duty to report; scene record",
+          "cite": [
+            "jp-doukoho-72-1"
+          ],
+          "unit": "police"
+        },
+        {
+          "text": "Red/Yellow/Green all dispatch an ambulance (assess; green may be non-transport)",
+          "cite": [
+            "jp-fdma-119-tier-definition"
+          ],
+          "unit": "ambulance"
+        }
+      ],
+      "coordination": []
+    },
+    "pov_2": {
+      "do": [
+        {
+          "text": "Stop the vehicle and turn on hazard lights",
+          "cite": [
+            "general-safety"
+          ]
+        },
+        {
+          "text": "Call 110 and report the location, time, and damage",
+          "cite": [
+            "jp-doukoho-72-1"
+          ]
+        },
+        {
+          "text": "Call 119; report a collision with possibly injured occupant(s)",
+          "cite": [
+            "jp-doukoho-72-1"
+          ]
+        },
+        {
+          "text": "Check whether the casualty is responsive and breathing",
+          "cite": [
+            "jp-jrc-bls-recognition"
+          ]
+        },
+        {
+          "text": "If breathing normally, keep still / recovery position and monitor until EMS arrives",
+          "cite": [
+            "jp-jrc-bls-recognition"
+          ]
+        },
+        {
+          "text": "Helping in an emergency is legally protected",
+          "cite": [
+            "jp-minpo-698-good-samaritan"
+          ]
+        }
+      ],
+      "warn": [],
+      "dont": [
+        {
+          "text": "Do not leave the scene before reporting",
+          "cite": [
+            "jp-doukoho-72-1"
+          ]
+        },
+        {
+          "text": "Do not move the injured unless there is fire/immediate danger (spinal precaution)",
+          "cite": [
+            "general-safety"
+          ]
+        }
+      ]
+    },
+    "pov_3": {
+      "mechanism": {
+        "text": "Moderate mechanism — occupant conscious and moving, but injury possible; assess and observe for delayed symptoms",
+        "cite": [
+          "jp-shonan-mc-koerinkijiko"
+        ]
+      },
+      "load_and_go": "judgment_call",
+      "destination": "conditional on arrival",
+      "check": [
+        {
+          "text": "ABC + consciousness; severity impression on arrival",
+          "cite": [
+            "jp-fdma-jushoukan"
+          ]
+        },
+        {
+          "text": "Spinal-motion precautions",
+          "cite": [
+            "jp-shonan-mc-load-and-go"
+          ]
+        },
+        {
+          "text": "Select destination by trauma grade; consult on-line MC if hospital selection is unclear",
+          "cite": [
+            "jp-shonan-mc-grade-classification"
+          ]
+        }
+      ],
+      "equipment": []
+    }
+  },
+  "notes": "",
+  "annotated_at": "2026-06-11T18:27:20",
+  "mmau_source": {
+    "video_id": 9733,
+    "type_id": 1,
+    "frame_range": [
+      50,
+      220
+    ],
+    "path_hint": "CAP-DATA/1/009733/images/",
+    "note": "Path relative to the MM-AU CAP-DATA root (github.com/jeffreychou777/LOTVS-MM-AU). frame_range is the [start,end] frame-index window (inclusive-exclusive as extracted) this annotation/clip covers within that source video."
+  }
+}

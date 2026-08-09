@@ -1,0 +1,226 @@
+{
+  "clip_id": "sft-positive-002779-000050-000080",
+  "annotation_source": "checklist",
+  "observation_tags": {
+    "collision_type": "vehicle_object",
+    "involved_parties": [],
+    "environment": {
+      "weather": "sunny",
+      "lighting": "day",
+      "scene_type": "urban",
+      "road_geometry": "arterials"
+    },
+    "scene_hazards": [
+      "deformed",
+      "debris",
+      "vehicle_rollover",
+      "fire"
+    ],
+    "damage_severity": "catastrophic",
+    "vehicle_position": "",
+    "incident_phase": "",
+    "ego_role": "",
+    "vru_status": {
+      "pedestrian": "",
+      "cyclist": "",
+      "motorcyclist": ""
+    },
+    "vru_post_status": ""
+  },
+  "applicable_chunks": [
+    "jp-doukoho-72-1",
+    "jp-fdma-119-tier-definition",
+    "jp-shonan-mc-koerinkijiko",
+    "jp-shonan-mc-genba-anzen",
+    "jp-shonan-mc-shudan-saigai",
+    "jp-jrc-bls-recognition",
+    "jp-jrc-bls-cpr",
+    "jp-jrc-bls-aed",
+    "jp-minpo-698-good-samaritan",
+    "jp-fdma-jushoukan",
+    "jp-shonan-mc-load-and-go",
+    "jp-shonan-mc-grade-classification"
+  ],
+  "pov_structured": {
+    "pov_1": {
+      "incident_summary": "A truck goes out of control and hits a pole on the side of the road; the impact is catastrophic as it rolls over; there is a glimpse of a yellow flash indicating a fire",
+      "urgency": "emergent",
+      "units": [
+        {
+          "text": "Traffic accident — driver's duty to report; scene record",
+          "cite": [
+            "jp-doukoho-72-1"
+          ],
+          "unit": "police"
+        },
+        {
+          "text": "Red/Yellow/Green all dispatch an ambulance (assess; green may be non-transport)",
+          "cite": [
+            "jp-fdma-119-tier-definition"
+          ],
+          "unit": "ambulance"
+        },
+        {
+          "text": "Entrapment / rollover / fire / fluid leak — extrication & suppression",
+          "cite": [
+            "jp-shonan-mc-koerinkijiko",
+            "jp-shonan-mc-genba-anzen"
+          ],
+          "unit": "fire_rescue"
+        },
+        {
+          "text": "High-risk mechanism, likely severe trauma — physician dispatch",
+          "cite": [
+            "jp-shonan-mc-koerinkijiko"
+          ],
+          "unit": "doctor_car"
+        }
+      ],
+      "coordination": [
+        {
+          "text": "Request traffic control in coordination with the road authority and police",
+          "cite": [
+            "jp-shonan-mc-shudan-saigai"
+          ]
+        }
+      ]
+    },
+    "pov_2": {
+      "do": [
+        {
+          "text": "Stop the vehicle and turn on hazard lights",
+          "cite": [
+            "general-safety"
+          ]
+        },
+        {
+          "text": "Call 110 and report the location, time, and damage",
+          "cite": [
+            "jp-doukoho-72-1"
+          ]
+        },
+        {
+          "text": "Call 119; report a collision with possibly injured occupant(s)",
+          "cite": [
+            "jp-doukoho-72-1"
+          ]
+        },
+        {
+          "text": "Check whether the casualty is responsive and breathing",
+          "cite": [
+            "jp-jrc-bls-recognition"
+          ]
+        },
+        {
+          "text": "If unresponsive and not breathing normally, follow the 119 dispatcher's phone guidance and give hands-only (compression-only) chest compressions",
+          "cite": [
+            "jp-jrc-bls-recognition",
+            "jp-jrc-bls-cpr"
+          ]
+        },
+        {
+          "text": "If breathing normally, keep still / recovery position and monitor until EMS arrives",
+          "cite": [
+            "jp-jrc-bls-recognition"
+          ]
+        },
+        {
+          "text": "If an AED is available, apply it and follow its prompts",
+          "cite": [
+            "jp-jrc-bls-aed"
+          ]
+        },
+        {
+          "text": "Helping in an emergency is legally protected",
+          "cite": [
+            "jp-minpo-698-good-samaritan"
+          ]
+        }
+      ],
+      "warn": [
+        {
+          "text": "Watch for following traffic — secondary-collision risk",
+          "cite": [
+            "jp-shonan-mc-genba-anzen"
+          ]
+        },
+        {
+          "text": "Vehicle unstable / fuel leak — do not approach without protection",
+          "cite": [
+            "jp-shonan-mc-genba-anzen"
+          ]
+        }
+      ],
+      "dont": [
+        {
+          "text": "Do not leave the scene before reporting",
+          "cite": [
+            "jp-doukoho-72-1"
+          ]
+        },
+        {
+          "text": "Do not move the injured unless there is fire/immediate danger (spinal precaution)",
+          "cite": [
+            "general-safety"
+          ]
+        }
+      ]
+    },
+    "pov_3": {
+      "mechanism": {
+        "text": "High-risk mechanism — suspect serious trauma",
+        "cite": [
+          "jp-shonan-mc-koerinkijiko"
+        ]
+      },
+      "load_and_go": "applicable",
+      "destination": "conditional on arrival",
+      "check": [
+        {
+          "text": "ABC + consciousness; severity impression on arrival",
+          "cite": [
+            "jp-fdma-jushoukan"
+          ]
+        },
+        {
+          "text": "Spinal-motion precautions",
+          "cite": [
+            "jp-shonan-mc-load-and-go"
+          ]
+        },
+        {
+          "text": "Select destination by trauma grade; consult on-line MC if hospital selection is unclear",
+          "cite": [
+            "jp-shonan-mc-grade-classification"
+          ]
+        },
+        {
+          "text": "Target 10-min on-scene time; depart on the receiving hospital's instruction (Load-and-Go)",
+          "cite": [
+            "jp-shonan-mc-load-and-go"
+          ]
+        }
+      ],
+      "equipment": [
+        {
+          "text": "High-concentration O2 (≥10 L/min), head-neutral fixation + spinal immobilisation kit",
+          "cite": [
+            "jp-shonan-mc-load-and-go"
+          ]
+        }
+      ]
+    }
+  },
+  "notes": "",
+  "annotated_at": "2026-06-15T14:16:38",
+  "mmau_source": {
+    "video_id": 2779,
+    "type_id": 32,
+    "frame_range": [
+      50,
+      80
+    ],
+    "path_hint": "CAP-DATA/32/002779/images/",
+    "note": "Path relative to the MM-AU CAP-DATA root (github.com/jeffreychou777/LOTVS-MM-AU). frame_range is the [start,end] frame-index window (inclusive-exclusive as extracted) this annotation/clip covers within that source video."
+  }
+}

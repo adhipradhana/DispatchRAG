@@ -1,0 +1,159 @@
+{
+  "clip_id": "sft-positive-001991-000051-000098",
+  "annotation_source": "checklist",
+  "observation_tags": {
+    "collision_type": "single_vehicle",
+    "involved_parties": [],
+    "environment": {
+      "weather": "sunny",
+      "lighting": "day",
+      "scene_type": "rural",
+      "road_geometry": "arterials"
+    },
+    "scene_hazards": [
+      "possible_injury",
+      "vehicle_stuck"
+    ],
+    "damage_severity": "moderate",
+    "vehicle_position": "",
+    "incident_phase": "",
+    "ego_role": "",
+    "vru_status": {
+      "pedestrian": "",
+      "cyclist": "",
+      "motorcyclist": ""
+    },
+    "vru_post_status": ""
+  },
+  "applicable_chunks": [
+    "jp-doukoho-72-1",
+    "jp-fdma-kinkyudo-4dankai",
+    "jp-fdma-jushoukan",
+    "jp-shonan-mc-koerinkijiko",
+    "jp-shonan-mc-load-and-go",
+    "jp-shonan-mc-grade-classification",
+    "jp-shonan-mc-genba-anzen",
+    "jp-jrc-bls-recognition",
+    "jp-jrc-bls-cpr",
+    "jp-jrc-bls-aed",
+    "jp-minpo-698-good-samaritan",
+    "jp-fdma-119-tier-definition"
+  ],
+  "pov_structured": {
+    "pov_1": {
+      "incident_summary": "A white sedan goes out of control and hits the off-road; the impact is medium; the vehicle might be stuck",
+      "urgency": "urgent",
+      "units": [
+        {
+          "text": "Traffic accident — driver's duty to report; scene record",
+          "cite": [
+            "jp-doukoho-72-1"
+          ],
+          "unit": "police"
+        },
+        {
+          "text": "Red/Yellow/Green all dispatch an ambulance (assess; green may be non-transport)",
+          "cite": [
+            "jp-fdma-119-tier-definition"
+          ],
+          "unit": "ambulance"
+        },
+        {
+          "text": "Entrapment / rollover / fire / fluid leak — extrication & suppression",
+          "cite": [
+            "jp-shonan-mc-koerinkijiko",
+            "jp-shonan-mc-genba-anzen"
+          ],
+          "unit": "fire_rescue"
+        }
+      ],
+      "coordination": []
+    },
+    "pov_2": {
+      "do": [
+        {
+          "text": "Stop the vehicle and turn on hazard lights",
+          "cite": [
+            "general-safety"
+          ]
+        },
+        {
+          "text": "Call 110 and report the location, time, and damage",
+          "cite": [
+            "jp-doukoho-72-1"
+          ]
+        },
+        {
+          "text": "Call 119; report a collision with possibly injured occupant(s)",
+          "cite": [
+            "jp-doukoho-72-1"
+          ]
+        },
+        {
+          "text": "Check whether the casualty is responsive and breathing",
+          "cite": [
+            "jp-jrc-bls-recognition"
+          ]
+        },
+        {
+          "text": "If breathing normally, keep still / recovery position and monitor until EMS arrives",
+          "cite": [
+            "jp-jrc-bls-recognition"
+          ]
+        }
+      ],
+      "warn": [],
+      "dont": [
+        {
+          "text": "Do not leave the scene before reporting",
+          "cite": [
+            "jp-doukoho-72-1"
+          ]
+        },
+        {
+          "text": "Do not move the injured unless there is fire/immediate danger (spinal precaution)",
+          "cite": [
+            "general-safety"
+          ]
+        }
+      ]
+    },
+    "pov_3": {
+      "mechanism": {
+        "text": "Moderate mechanism — occupant conscious and moving, but injury possible; assess and observe for delayed symptoms",
+        "cite": [
+          "jp-shonan-mc-koerinkijiko"
+        ]
+      },
+      "load_and_go": "judgment_call",
+      "destination": "conditional on arrival",
+      "check": [
+        {
+          "text": "ABC + consciousness; severity impression on arrival",
+          "cite": [
+            "jp-fdma-jushoukan"
+          ]
+        },
+        {
+          "text": "Spinal-motion precautions",
+          "cite": [
+            "jp-shonan-mc-load-and-go"
+          ]
+        }
+      ],
+      "equipment": []
+    }
+  },
+  "notes": "",
+  "annotated_at": "2026-06-10T18:30:52",
+  "mmau_source": {
+    "video_id": 1991,
+    "type_id": 42,
+    "frame_range": [
+      51,
+      98
+    ],
+    "path_hint": "CAP-DATA/42/001991/images/",
+    "note": "Path relative to the MM-AU CAP-DATA root (github.com/jeffreychou777/LOTVS-MM-AU). frame_range is the [start,end] frame-index window (inclusive-exclusive as extracted) this annotation/clip covers within that source video."
+  }
+}

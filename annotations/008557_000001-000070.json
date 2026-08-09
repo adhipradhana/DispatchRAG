@@ -1,0 +1,181 @@
+{
+  "clip_id": "sft-positive-008557-000001-000070",
+  "annotation_source": "checklist",
+  "observation_tags": {
+    "collision_type": "vehicle_pedestrian",
+    "involved_parties": [],
+    "environment": {
+      "weather": "sunny",
+      "lighting": "day",
+      "scene_type": "highway",
+      "road_geometry": "intersection"
+    },
+    "scene_hazards": [
+      "possible_injury"
+    ],
+    "damage_severity": "",
+    "vehicle_position": "",
+    "incident_phase": "",
+    "ego_role": "",
+    "vru_status": {
+      "pedestrian": "",
+      "cyclist": "",
+      "motorcyclist": ""
+    },
+    "vru_post_status": "unconscious_not_moving"
+  },
+  "applicable_chunks": [
+    "jp-doukoho-72-1",
+    "jp-fdma-119-tier-definition",
+    "jp-shonan-mc-koerinkijiko",
+    "jp-jrc-bls-recognition",
+    "jp-jrc-bls-cpr",
+    "jp-jrc-bls-aed",
+    "jp-minpo-698-good-samaritan",
+    "jp-shonan-mc-genba-anzen",
+    "jp-fdma-jushoukan",
+    "jp-shonan-mc-load-and-go"
+  ],
+  "pov_structured": {
+    "pov_1": {
+      "incident_summary": "A pedestrian is hit by a white car; the pedestrian seems unconscious",
+      "urgency": "emergent",
+      "units": [
+        {
+          "text": "Traffic accident — driver's duty to report; scene record",
+          "cite": [
+            "jp-doukoho-72-1"
+          ],
+          "unit": "police"
+        },
+        {
+          "text": "Red/Yellow/Green all dispatch an ambulance (assess; green may be non-transport)",
+          "cite": [
+            "jp-fdma-119-tier-definition"
+          ],
+          "unit": "ambulance"
+        },
+        {
+          "text": "High-risk mechanism, likely severe trauma — physician dispatch",
+          "cite": [
+            "jp-shonan-mc-koerinkijiko"
+          ],
+          "unit": "doctor_car"
+        }
+      ],
+      "coordination": []
+    },
+    "pov_2": {
+      "do": [
+        {
+          "text": "Stop the vehicle and turn on hazard lights",
+          "cite": [
+            "general-safety"
+          ]
+        },
+        {
+          "text": "Call 110 and report the location, time, and damage",
+          "cite": [
+            "jp-doukoho-72-1"
+          ]
+        },
+        {
+          "text": "Call 119; report a collision with possibly injured occupant(s)",
+          "cite": [
+            "jp-doukoho-72-1"
+          ]
+        },
+        {
+          "text": "Check whether the casualty is responsive and breathing",
+          "cite": [
+            "jp-jrc-bls-recognition"
+          ]
+        },
+        {
+          "text": "If unresponsive and not breathing normally, follow the 119 dispatcher's phone guidance and give hands-only (compression-only) chest compressions",
+          "cite": [
+            "jp-jrc-bls-recognition",
+            "jp-jrc-bls-cpr"
+          ]
+        },
+        {
+          "text": "If breathing normally, keep still / recovery position and monitor until EMS arrives",
+          "cite": [
+            "jp-jrc-bls-recognition"
+          ]
+        },
+        {
+          "text": "If an AED is available, apply it and follow its prompts",
+          "cite": [
+            "jp-jrc-bls-aed"
+          ]
+        },
+        {
+          "text": "Helping in an emergency is legally protected",
+          "cite": [
+            "jp-minpo-698-good-samaritan"
+          ]
+        }
+      ],
+      "warn": [
+        {
+          "text": "Watch for following traffic — secondary-collision risk",
+          "cite": [
+            "jp-shonan-mc-genba-anzen"
+          ]
+        }
+      ],
+      "dont": [
+        {
+          "text": "Do not leave the scene before reporting",
+          "cite": [
+            "jp-doukoho-72-1"
+          ]
+        },
+        {
+          "text": "Do not move the injured unless there is fire/immediate danger (spinal precaution)",
+          "cite": [
+            "general-safety"
+          ]
+        }
+      ]
+    },
+    "pov_3": {
+      "mechanism": {
+        "text": "Moderate mechanism — occupant conscious and moving, but injury possible; assess and observe for delayed symptoms",
+        "cite": [
+          "jp-shonan-mc-koerinkijiko"
+        ]
+      },
+      "load_and_go": "applicable",
+      "destination": "conditional on arrival",
+      "check": [
+        {
+          "text": "ABC + consciousness; severity impression on arrival",
+          "cite": [
+            "jp-fdma-jushoukan"
+          ]
+        },
+        {
+          "text": "Spinal-motion precautions",
+          "cite": [
+            "jp-shonan-mc-load-and-go"
+          ]
+        }
+      ],
+      "equipment": []
+    }
+  },
+  "notes": "",
+  "annotated_at": "2026-06-11T18:16:05",
+  "mmau_source": {
+    "video_id": 8557,
+    "type_id": 56,
+    "frame_range": [
+      1,
+      70
+    ],
+    "path_hint": "CAP-DATA/56/008557/images/",
+    "note": "Path relative to the MM-AU CAP-DATA root (github.com/jeffreychou777/LOTVS-MM-AU). frame_range is the [start,end] frame-index window (inclusive-exclusive as extracted) this annotation/clip covers within that source video."
+  }
+}

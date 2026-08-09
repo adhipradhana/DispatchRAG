@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Accident Dispatch Dataset</title>
+<meta name="description" content="500 human-annotated dashcam accident clips with structured, rule-grounded emergency-dispatch plans.">
+<style>
+  :root {
+    --bg: #ffffff;
+    --bg-alt: #f6f7f9;
+    --text: #1a1d23;
+    --text-muted: #5b6270;
+    --border: #e3e6eb;
+    --accent: #b5432c;
+    --accent-bg: #fbeeeb;
+    --card-shadow: 0 1px 2px rgba(16, 20, 27, 0.04);
+    --code-bg: #f0f1f4;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14161a;
+      --bg-alt: #1b1e24;
+      --text: #e7e9ec;
+      --text-muted: #9aa1ac;
+      --border: #2b2f37;
+      --accent: #e08668;
+      --accent-bg: #2b1f1c;
+      --card-shadow: none;
+      --code-bg: #1f2229;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.55;
+  }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 64px 24px 96px; }
+  header { margin-bottom: 40px; }
+  h1 { font-size: 2.1rem; margin: 0 0 10px; letter-spacing: -0.01em; }
+  .tagline { color: var(--text-muted); font-size: 1.08rem; max-width: 60ch; margin: 0 0 20px; }
+  .badges { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 8px; }
+  .badge {
+    display: inline-flex; align-items: center; gap: 6px;
+    font-size: 0.82rem; padding: 5px 11px; border-radius: 999px;
+    background: var(--bg-alt); border: 1px solid var(--border); color: var(--text-muted);
+  }
+  .cta { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 22px; }
+  .btn {
+    display: inline-block; padding: 9px 16px; border-radius: 8px;
+    text-decoration: none; font-size: 0.92rem; font-weight: 500;
+    border: 1px solid var(--border);
+  }
+  .btn.primary { background: var(--accent); color: #fff; border-color: var(--accent); }
+  .btn.secondary { color: var(--text); background: var(--bg-alt); }
+
+  h2 { font-size: 1.25rem; margin: 48px 0 14px; padding-top: 4px; }
+  section p { color: var(--text); }
+  .note { color: var(--text-muted); font-size: 0.92rem; }
+
+  .stat-grid {
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin: 20px 0 8px;
+  }
+  .stat-card {
+    background: var(--bg-alt); border: 1px solid var(--border); border-radius: 10px;
+    padding: 16px 14px; text-align: center; box-shadow: var(--card-shadow);
+  }
+  .stat-card .n { font-size: 1.55rem; font-weight: 700; }
+  .stat-card .l { font-size: 0.78rem; color: var(--text-muted); margin-top: 2px; }
+  @media (max-width: 640px) { .stat-grid { grid-template-columns: repeat(2, 1fr); } }
+
+  table { width: 100%; border-collapse: collapse; margin: 8px 0 4px; font-size: 0.93rem; }
+  th, td { text-align: left; padding: 7px 10px; border-bottom: 1px solid var(--border); }
+  th { color: var(--text-muted); font-weight: 600; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.02em; }
+  td.num, th.num { text-align: right; }
+
+  code, pre {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    background: var(--code-bg); border-radius: 6px;
+  }
+  code { padding: 2px 6px; font-size: 0.86em; }
+  pre {
+    padding: 14px 16px; overflow-x: auto; font-size: 0.82rem; line-height: 1.5;
+    border: 1px solid var(--border);
+  }
+  pre code { background: none; padding: 0; }
+
+  .tier-bar { display: flex; height: 22px; border-radius: 6px; overflow: hidden; margin: 14px 0 6px; border: 1px solid var(--border); }
+  .tier-seg { display: flex; align-items: center; justify-content: center; font-size: 0.72rem; color: #fff; font-weight: 600; }
+  .legend { display: flex; gap: 16px; flex-wrap: wrap; font-size: 0.82rem; color: var(--text-muted); }
+  .legend span.dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin-right: 5px; }
+
+  footer {
+    margin-top: 64px; padding-top: 24px; border-top: 1px solid var(--border);
+    color: var(--text-muted); font-size: 0.85rem;
+  }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="badges">
+      <span class="badge">500 clips</span>
+      <span class="badge">4-tier urgency triage</span>
+      <span class="badge">19-rule regulatory corpus</span>
+      <span class="badge">CC-BY-NC-4.0</span>
+    </div>
+    <h1>Accident Dispatch Dataset</h1>
+    <p class="tagline">
+      500 human-annotated dashcam accident clips, each labeled with a structured, three-audience
+      emergency-dispatch plan — dispatcher, civilian bystander, and arriving ambulance crew —
+      grounded in a 19-rule Japanese regulatory corpus (Road Traffic Act, FDMA urgency-triage
+      manual, JPTEC trauma guidelines).
+    </p>
+    <div class="cta">
+      <a class="btn primary" href="../annotations/">Browse annotations</a>
+      <a class="btn secondary" href="https://github.com/jeffreychou777/LOTVS-MM-AU">Source video (MM-AU) ↗</a>
+    </div>
+  </header>
+
+  <section>
+    <h2>At a glance</h2>
+    <div class="stat-grid">
+      <div class="stat-card"><div class="n">500</div><div class="l">annotated clips</div></div>
+      <div class="stat-card"><div class="n">6</div><div class="l">collision types</div></div>
+      <div class="stat-card"><div class="n">19</div><div class="l">regulatory rule chunks</div></div>
+      <div class="stat-card"><div class="n">4</div><div class="l">urgency tiers</div></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Urgency tier distribution</h2>
+    <div class="tier-bar">
+      <div class="tier-seg" style="width:36%;background:#8a8f98;">Non-Emergency · 180</div>
+      <div class="tier-seg" style="width:24.4%;background:#4f9d69;">Low · 122</div>
+      <div class="tier-seg" style="width:24.2%;background:#d4a72c;">Semi · 121</div>
+      <div class="tier-seg" style="width:15.4%;background:#c0392b;">Emergency · 77</div>
+    </div>
+    <p class="note">FDMA 4-tier triage, assigned from observed medical-care need. Non-Emergency
+      dispatches police only; the other three tiers always dispatch an ambulance.</p>
+  </section>
+
+  <section>
+    <h2>Collision type</h2>
+    <table>
+      <tr><th>Type</th><th class="num">n</th></tr>
+      <tr><td>Vehicle-to-vehicle</td><td class="num">143</td></tr>
+      <tr><td>Vehicle-to-object</td><td class="num">91</td></tr>
+      <tr><td>Vehicle-to-motorcycle</td><td class="num">90</td></tr>
+      <tr><td>Vehicle-to-pedestrian</td><td class="num">79</td></tr>
+      <tr><td>Single-vehicle</td><td class="num">66</td></tr>
+      <tr><td>Vehicle-to-bicycle</td><td class="num">31</td></tr>
+    </table>
+    <p class="note">Environment: 429 sunny / 24 rainy / 47 snowy · 454 day / 46 night.</p>
+  </section>
+
+  <section>
+    <h2>Annotation schema</h2>
+    <p>Each clip is one JSON file under <code>annotations/</code>: scene observation tags, the
+      corpus chunk_ids that ground the dispatch, and the 3-POV plan itself.</p>
+    <pre><code>{
+  "clip_id": "sft-positive-000001-000018-000050",
+  "observation_tags": { "collision_type": "vehicle_vehicle", "environment": {...}, ... },
+  "applicable_chunks": ["jp-doukoho-72-1", "..."],
+  "pov_structured": {
+    "pov_1": { "incident_summary": "...", "urgency": "non_urgent|less_urgent|urgent|emergent",
+               "units": [{ "unit": "police", "text": "...", "cite": [...] }] },
+    "pov_2": { "do": [...], "warn": [...], "dont": [...] },
+    "pov_3": { "mechanism": {...}, "load_and_go": "...", "check": [...] }
+  },
+  "mmau_source": { "video_id": 1, "type_id": 10, "frame_range": [18, 50],
+                   "path_hint": "CAP-DATA/10/000001/images/" }
+}</code></pre>
+    <p class="note">See the repository <a href="https://github.com/">README</a> for the full field
+      reference and the corpus schema.</p>
+  </section>
+
+  <section>
+    <h2>No video included</h2>
+    <p>This dataset does not redistribute video. Clips are derived from
+      <a href="https://github.com/jeffreychou777/LOTVS-MM-AU">MM-AU (LOTVS-MM-AU)</a>
+      — each annotation file is named and tagged with MM-AU's own <code>video_id</code> /
+      <code>type_id</code> numbering (<code>mmau_source</code> field) so it can be matched back to
+      the original frames by anyone who has downloaded MM-AU directly from its authors.</p>
+  </section>
+
+  <footer>
+    Annotations and corpus released under CC-BY-NC-4.0, matching the license of the underlying
+    MM-AU source material. Corpus text drawn from public Japanese government/medical-society
+    sources (e-Gov Japan, FDMA, JPTEC) — see each chunk's <code>source_url</code>.
+  </footer>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,112 @@
+{
+  "clip_id": "sft-positive-001710-000045-000075",
+  "annotation_source": "checklist",
+  "observation_tags": {
+    "collision_type": "vehicle_object",
+    "involved_parties": [
+      "fixed_object"
+    ],
+    "environment": {
+      "weather": "sunny",
+      "lighting": "day",
+      "scene_type": "rural",
+      "road_geometry": "arterials"
+    },
+    "scene_hazards": [],
+    "damage_severity": "",
+    "vehicle_position": "",
+    "incident_phase": "",
+    "ego_role": "",
+    "vru_status": {
+      "pedestrian": "",
+      "cyclist": "",
+      "motorcyclist": ""
+    }
+  },
+  "applicable_chunks": [
+    "jp-doukoho-72-1",
+    "jp-fdma-kinkyudo-4dankai",
+    "jp-fdma-jushoukan",
+    "jp-shonan-mc-koerinkijiko",
+    "jp-fdma-fusoso",
+    "jp-fdma-119-tier-definition"
+  ],
+  "pov_structured": {
+    "pov_1": {
+      "incident_summary": "The ego-car hits a pole on the side of road and got stuck; the impact is low; no injury is visible",
+      "urgency": "non_urgent",
+      "units": [
+        {
+          "text": "Traffic accident — driver's duty to report; scene record",
+          "cite": [
+            "jp-doukoho-72-1"
+          ],
+          "unit": "police"
+        }
+      ],
+      "coordination": []
+    },
+    "pov_2": {
+      "do": [
+        {
+          "text": "Stop the vehicle and turn on hazard lights",
+          "cite": [
+            "general-safety"
+          ]
+        },
+        {
+          "text": "Call 110 and report the location, time, and damage",
+          "cite": [
+            "jp-doukoho-72-1"
+          ]
+        },
+        {
+          "text": "If vehicles are drivable and no one is hurt, move them off the live lane",
+          "cite": [
+            "jp-doukoho-72-1"
+          ]
+        }
+      ],
+      "warn": [],
+      "dont": [
+        {
+          "text": "Do not leave the scene before reporting",
+          "cite": [
+            "jp-doukoho-72-1"
+          ]
+        }
+      ]
+    },
+    "pov_3": {
+      "mechanism": {
+        "text": "Low-energy collision, occupants appear uninjured",
+        "cite": [
+          "jp-shonan-mc-koerinkijiko"
+        ]
+      },
+      "load_and_go": "not_applicable",
+      "destination": "none (no transport)",
+      "check": [
+        {
+          "text": "Confirm occupants uninjured — ABC + consciousness",
+          "cite": [
+            "jp-fdma-jushoukan"
+          ]
+        }
+      ],
+      "equipment": []
+    }
+  },
+  "notes": "",
+  "annotated_at": "2026-06-10T18:20:37",
+  "mmau_source": {
+    "video_id": 1710,
+    "type_id": 15,
+    "frame_range": [
+      45,
+      75
+    ],
+    "path_hint": "CAP-DATA/15/001710/images/",
+    "note": "Path relative to the MM-AU CAP-DATA root (github.com/jeffreychou777/LOTVS-MM-AU). frame_range is the [start,end] frame-index window (inclusive-exclusive as extracted) this annotation/clip covers within that source video."
+  }
+}

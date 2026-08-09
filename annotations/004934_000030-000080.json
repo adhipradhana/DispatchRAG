@@ -1,0 +1,144 @@
+{
+  "clip_id": "sft-positive-004934-000030-000080",
+  "annotation_source": "checklist",
+  "observation_tags": {
+    "collision_type": "vehicle_motorcycle",
+    "involved_parties": [],
+    "environment": {
+      "weather": "sunny",
+      "lighting": "day",
+      "scene_type": "urban",
+      "road_geometry": "intersection"
+    },
+    "scene_hazards": [
+      "deformed",
+      "possible_injury"
+    ],
+    "damage_severity": "",
+    "vehicle_position": "",
+    "incident_phase": "",
+    "ego_role": "",
+    "vru_status": {
+      "pedestrian": "",
+      "cyclist": "",
+      "motorcyclist": ""
+    },
+    "vru_post_status": "stands_up_fine"
+  },
+  "applicable_chunks": [
+    "jp-doukoho-72-1",
+    "jp-fdma-119-tier-definition",
+    "jp-fdma-fusoso",
+    "jp-shonan-mc-koerinkijiko",
+    "jp-fdma-jushoukan"
+  ],
+  "pov_structured": {
+    "pov_1": {
+      "incident_summary": "A motorcycle is hit by a grey SUV and falls; the biker can stand up post-accidents",
+      "urgency": "less_urgent",
+      "units": [
+        {
+          "text": "Traffic accident — driver's duty to report; scene record",
+          "cite": [
+            "jp-doukoho-72-1"
+          ],
+          "unit": "police"
+        },
+        {
+          "text": "Red/Yellow/Green all dispatch an ambulance (assess; green may be non-transport)",
+          "cite": [
+            "jp-fdma-119-tier-definition"
+          ],
+          "unit": "ambulance"
+        }
+      ],
+      "coordination": []
+    },
+    "pov_2": {
+      "do": [
+        {
+          "text": "Stop the vehicle and turn on hazard lights",
+          "cite": [
+            "general-safety"
+          ]
+        },
+        {
+          "text": "Call 110 and report the location, time, and damage",
+          "cite": [
+            "jp-doukoho-72-1"
+          ]
+        },
+        {
+          "text": "Call 119; report a collision with possibly injured occupant(s)",
+          "cite": [
+            "jp-doukoho-72-1"
+          ]
+        },
+        {
+          "text": "If no one needs urgent care, visit a clinic yourself; re-call 119 if symptoms worsen",
+          "cite": [
+            "jp-fdma-fusoso"
+          ]
+        }
+      ],
+      "warn": [],
+      "dont": [
+        {
+          "text": "Do not leave the scene before reporting",
+          "cite": [
+            "jp-doukoho-72-1"
+          ]
+        },
+        {
+          "text": "Do not move the injured unless there is fire/immediate danger (spinal precaution)",
+          "cite": [
+            "general-safety"
+          ]
+        }
+      ]
+    },
+    "pov_3": {
+      "mechanism": {
+        "text": "Moderate mechanism — occupant conscious and moving, but injury possible; assess and observe for delayed symptoms",
+        "cite": [
+          "jp-shonan-mc-koerinkijiko"
+        ]
+      },
+      "load_and_go": "judgment_call",
+      "destination": "conditional on arrival",
+      "check": [
+        {
+          "text": "ABC + consciousness; severity impression on arrival",
+          "cite": [
+            "jp-fdma-jushoukan"
+          ]
+        },
+        {
+          "text": "Advise self-presentation to a clinic; re-call 119 if symptoms worsen",
+          "cite": [
+            "jp-fdma-fusoso"
+          ]
+        },
+        {
+          "text": "Record observation, urgency-assessment result, and explanation given",
+          "cite": [
+            "jp-fdma-fusoso"
+          ]
+        }
+      ],
+      "equipment": []
+    }
+  },
+  "notes": "",
+  "annotated_at": "2026-06-11T20:22:54",
+  "mmau_source": {
+    "video_id": 4934,
+    "type_id": 50,
+    "frame_range": [
+      30,
+      80
+    ],
+    "path_hint": "CAP-DATA/50/004934/images/",
+    "note": "Path relative to the MM-AU CAP-DATA root (github.com/jeffreychou777/LOTVS-MM-AU). frame_range is the [start,end] frame-index window (inclusive-exclusive as extracted) this annotation/clip covers within that source video."
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "clip_id": "sft-positive-001083-000001-000050",
+  "annotation_source": "checklist",
+  "observation_tags": {
+    "collision_type": "single_vehicle",
+    "environment": {
+      "weather": "sunny",
+      "lighting": "day",
+      "scene_type": "highway",
+      "road_geometry": "arterials"
+    },
+    "scene_hazards": [
+      "road_blocked"
+    ],
+    "damage_severity": "",
+    "vehicle_position": "",
+    "incident_phase": "",
+    "ego_role": "",
+    "vru_status": {
+      "pedestrian": "",
+      "cyclist": "",
+      "motorcyclist": ""
+    },
+    "involved_parties": [
+      "vehicle"
+    ],
+    "ego_involved": null
+  },
+  "applicable_chunks": [
+    "jp-doukoho-72-1",
+    "jp-shonan-mc-shudan-saigai",
+    "jp-shonan-mc-genba-anzen",
+    "jp-shonan-mc-koerinkijiko",
+    "jp-fdma-jushoukan",
+    "jp-fdma-119-tier-definition",
+    "jp-fdma-kinkyudo-4dankai",
+    "jp-fdma-fusoso"
+  ],
+  "pov_structured": {
+    "pov_1": {
+      "incident_summary": "A sedan is out of control and hit the guard rail on the left; the impact is medium",
+      "urgency": "non_urgent",
+      "units": [
+        {
+          "text": "Traffic accident — driver's duty to report; scene record",
+          "cite": [
+            "jp-doukoho-72-1"
+          ],
+          "unit": "police"
+        }
+      ],
+      "coordination": [
+        {
+          "text": "Request traffic control in coordination with the road authority and police",
+          "cite": [
+            "jp-shonan-mc-shudan-saigai"
+          ]
+        }
+      ]
+    },
+    "pov_2": {
+      "do": [
+        {
+          "text": "Stop the vehicle and turn on hazard lights",
+          "cite": [
+            "general-safety"
+          ]
+        },
+        {
+          "text": "Call 110 and report the location, time, and damage",
+          "cite": [
+            "jp-doukoho-72-1"
+          ]
+        },
+        {
+          "text": "If vehicles are drivable and no one is hurt, move them off the live lane",
+          "cite": [
+            "jp-doukoho-72-1"
+          ]
+        }
+      ],
+      "warn": [
+        {
+          "text": "Watch for following traffic — secondary-collision risk",
+          "cite": [
+            "jp-shonan-mc-genba-anzen"
+          ]
+        }
+      ],
+      "dont": [
+        {
+          "text": "Do not leave the scene before reporting",
+          "cite": [
+            "jp-doukoho-72-1"
+          ]
+        }
+      ]
+    },
+    "pov_3": {
+      "mechanism": {
+        "text": "Low-energy collision, occupants appear uninjured",
+        "cite": [
+          "jp-shonan-mc-koerinkijiko"
+        ]
+      },
+      "load_and_go": "not_applicable",
+      "destination": "none (no transport)",
+      "check": [
+        {
+          "text": "Confirm occupants uninjured — ABC + consciousness",
+          "cite": [
+            "jp-fdma-jushoukan"
+          ]
+        }
+      ],
+      "equipment": []
+    }
+  },
+  "notes": "",
+  "annotated_at": "2026-06-07T14:22:53",
+  "mmau_source": {
+    "video_id": 1083,
+    "type_id": 42,
+    "frame_range": [
+      1,
+      50
+    ],
+    "path_hint": "CAP-DATA/42/001083/images/",
+    "note": "Path relative to the MM-AU CAP-DATA root (github.com/jeffreychou777/LOTVS-MM-AU). frame_range is the [start,end] frame-index window (inclusive-exclusive as extracted) this annotation/clip covers within that source video."
+  }
+}

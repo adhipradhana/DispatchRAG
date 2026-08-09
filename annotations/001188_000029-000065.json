@@ -1,0 +1,124 @@
+{
+  "clip_id": "sft-positive-001188-000029-000065",
+  "annotation_source": "checklist",
+  "observation_tags": {
+    "collision_type": "vehicle_vehicle",
+    "environment": {
+      "weather": "sunny",
+      "lighting": "day",
+      "scene_type": "urban",
+      "road_geometry": "T-junction"
+    },
+    "scene_hazards": [],
+    "damage_severity": "",
+    "vehicle_position": "",
+    "incident_phase": "",
+    "ego_role": "",
+    "vru_status": {
+      "pedestrian": "",
+      "cyclist": "",
+      "motorcyclist": ""
+    },
+    "involved_parties": [
+      "vehicle",
+      "vehicle"
+    ],
+    "ego_involved": null
+  },
+  "applicable_chunks": [
+    "jp-doukoho-72-1",
+    "jp-fdma-fusoso",
+    "jp-shonan-mc-koerinkijiko",
+    "jp-fdma-jushoukan"
+  ],
+  "pov_structured": {
+    "pov_1": {
+      "incident_summary": "Ego-car side-scratch another car; the impact is low; no injury is visible",
+      "urgency": "non_urgent",
+      "units": [
+        {
+          "text": "Traffic accident — driver's duty to report; scene record",
+          "cite": [
+            "jp-doukoho-72-1"
+          ],
+          "unit": "police"
+        }
+      ],
+      "coordination": []
+    },
+    "pov_2": {
+      "do": [
+        {
+          "text": "Stop the vehicle and turn on hazard lights",
+          "cite": [
+            "general-safety"
+          ]
+        },
+        {
+          "text": "Call 110 and report the location, time, and damage",
+          "cite": [
+            "jp-doukoho-72-1"
+          ]
+        },
+        {
+          "text": "If no one needs urgent care, visit a clinic yourself; re-call 119 if symptoms worsen",
+          "cite": [
+            "jp-fdma-fusoso"
+          ]
+        },
+        {
+          "text": "If vehicles are drivable and no one is hurt, move them off the live lane",
+          "cite": [
+            "jp-doukoho-72-1"
+          ]
+        }
+      ],
+      "warn": [],
+      "dont": [
+        {
+          "text": "Do not leave the scene before reporting",
+          "cite": [
+            "jp-doukoho-72-1"
+          ]
+        }
+      ]
+    },
+    "pov_3": {
+      "mechanism": {
+        "text": "Low-energy collision, occupants appear uninjured",
+        "cite": [
+          "jp-shonan-mc-koerinkijiko"
+        ]
+      },
+      "load_and_go": "not_applicable",
+      "destination": "none (no transport)",
+      "check": [
+        {
+          "text": "Confirm occupants uninjured — ABC + consciousness",
+          "cite": [
+            "jp-fdma-jushoukan"
+          ]
+        },
+        {
+          "text": "Advise self-presentation to a clinic; re-call 119 if symptoms worsen",
+          "cite": [
+            "jp-fdma-fusoso"
+          ]
+        }
+      ],
+      "equipment": []
+    }
+  },
+  "notes": "",
+  "annotated_at": "2026-06-08T20:39:11",
+  "mmau_source": {
+    "video_id": 1188,
+    "type_id": 12,
+    "frame_range": [
+      29,
+      65
+    ],
+    "path_hint": "CAP-DATA/12/001188/images/",
+    "note": "Path relative to the MM-AU CAP-DATA root (github.com/jeffreychou777/LOTVS-MM-AU). frame_range is the [start,end] frame-index window (inclusive-exclusive as extracted) this annotation/clip covers within that source video."
+  }
+}
