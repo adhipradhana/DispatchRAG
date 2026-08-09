@@ -1,9 +1,14 @@
-# Accident Dispatch Dataset
+# DispatchRAG
 
-500 human-annotated dashcam accident clips, each labeled with a structured, 3-audience
-emergency-dispatch plan (dispatcher / civilian bystander / arriving ambulance crew) and
-grounded in a 19-rule Japanese regulatory corpus (Road Traffic Act, FDMA urgency-triage
-manual, JPTEC trauma guidelines).
+**DispatchRAG** is a retrieval-grounded framework for turning a dashcam accident clip into a
+structured, three-audience emergency-dispatch plan (dispatcher / civilian bystander / arriving
+ambulance crew), with every directive grounded in a cited regulatory rule rather than free
+generation. This repository is the dataset release: 500 human-annotated accident clips and the
+19-rule Japanese regulatory corpus (Road Traffic Act, FDMA urgency-triage manual, JPTEC trauma
+guidelines) the annotations are grounded in.
+
+See [`docs/`](docs/) (published as GitHub Pages) for an overview of the dataset and how it's
+structured.
 
 **No video is included in this repository.** Clips are derived from the public
 [MM-AU (LOTVS-MM-AU)](https://github.com/jeffreychou777/LOTVS-MM-AU) dataset
@@ -111,8 +116,9 @@ Medical Center field protocols). Each chunk has `chunk_id`, `text_ja` (source la
 ## Provenance / source video
 
 This repository intentionally does **not** redistribute video. `annotations/*.json` files are
-named `{video_id:06d}_{start:06d}-{end:06d}.json`, where `video_id` and the frame window are MM-AU's
-own numbering (also duplicated in each file's `mmau_source` field). To recover the source frames:
+named `{video_id:06d}.json`, where `video_id` is MM-AU's own video numbering (unique across all
+500 clips in this dataset; also duplicated in each file's `mmau_source` field, along with the
+`type_id` and `frame_range` needed to locate the exact clip window). To recover the source frames:
 
 1. Download MM-AU's **CAP-DATA** split from the [official repo](https://github.com/jeffreychou777/LOTVS-MM-AU)
    (chunked archive; see their README for merge/extract instructions).

@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Accident Dispatch Dataset</title>
-<meta name="description" content="500 human-annotated dashcam accident clips with structured, rule-grounded emergency-dispatch plans.">
+<title>DispatchRAG</title>
+<meta name="description" content="DispatchRAG: a retrieval-grounded framework for accident-scene emergency dispatch, and its 500-clip annotated dataset.">
 <style>
   :root {
     --bg: #ffffff;
@@ -110,12 +110,14 @@
       <span class="badge">19-rule regulatory corpus</span>
       <span class="badge">CC-BY-NC-4.0</span>
     </div>
-    <h1>Accident Dispatch Dataset</h1>
+    <h1>DispatchRAG</h1>
     <p class="tagline">
-      500 human-annotated dashcam accident clips, each labeled with a structured, three-audience
-      emergency-dispatch plan — dispatcher, civilian bystander, and arriving ambulance crew —
-      grounded in a 19-rule Japanese regulatory corpus (Road Traffic Act, FDMA urgency-triage
-      manual, JPTEC trauma guidelines).
+      A retrieval-grounded framework for turning a dashcam accident clip into a structured,
+      three-audience emergency-dispatch plan — dispatcher, civilian bystander, and arriving
+      ambulance crew — with every directive grounded in a cited rule from a 19-rule Japanese
+      regulatory corpus (Road Traffic Act, FDMA urgency-triage manual, JPTEC trauma guidelines),
+      rather than free generation. This repository is the dataset release: 500 human-annotated
+      accident clips and the corpus itself.
     </p>
     <div class="cta">
       <a class="btn primary" href="../annotations/">Browse annotations</a>
