@@ -126,6 +126,16 @@ named `{video_id:06d}.json`, where `video_id` is MM-AU's own video numbering (un
 3. `frame_range` gives the `[start, end]` frame-index window this annotation covers within that
    source video.
 
+## Acknowledgments
+
+This dataset would not exist without **MM-AU (LOTVS-MM-AU)** — [github.com/jeffreychou777/LOTVS-MM-AU](https://github.com/jeffreychou777/LOTVS-MM-AU),
+from the paper *"Abductive Ego-View Accident Video Understanding for Safe Driving Perception."*
+Every clip's source video, collision-type category (`type_id`), and abnormal-frame window
+(`frame_range`) come directly from their CAP-DATA annotations; our contribution is the
+dispatch-plan labeling (`pov_structured`) and the regulatory corpus layered on top. Please cite
+the MM-AU paper and consult their repository for the canonical citation if you use the source
+video/frames this dataset references.
+
 ## License
 
 The annotations and corpus in this repository are original work released under
