@@ -126,21 +126,19 @@ named `{video_id:06d}.json`, where `video_id` is MM-AU's own video numbering (un
 3. `frame_range` gives the `[start, end]` frame-index window this annotation covers within that
    source video.
 
-## Acknowledgments
+## 👍 Acknowledgement
 
-This dataset would not exist without **MM-AU (LOTVS-MM-AU)** — [github.com/jeffreychou777/LOTVS-MM-AU](https://github.com/jeffreychou777/LOTVS-MM-AU),
-from the paper *"Abductive Ego-View Accident Video Understanding for Safe Driving Perception."*
-Every clip's source video, collision-type category (`type_id`), and abnormal-frame window
-(`frame_range`) come directly from their CAP-DATA annotations; our contribution is the
-dispatch-plan labeling (`pov_structured`) and the regulatory corpus layered on top. Please cite
-the MM-AU paper and consult their repository for the canonical citation if you use the source
-video/frames this dataset references.
+* [MM-AU (LOTVS-MM-AU)](https://github.com/jeffreychou777/LOTVS-MM-AU) — source dataset for every
+  clip's video, collision-type category, and abnormal-frame window (paper: *"Abductive Ego-View
+  Accident Video Understanding for Safe Driving Perception"*). Please cite the MM-AU paper and
+  consult their repository for the canonical citation if you use the source video/frames this
+  dataset references.
 
 ## License
 
-The annotations and corpus in this repository are original work released under
-**CC-BY-NC-4.0**, matching the license of the underlying MM-AU source material. MM-AU itself is
-CC-BY-NC-4.0 licensed by its authors — see their repository for full terms and the citation for
-their paper ("Abductive Ego-View Accident Video Understanding for Safe Driving Perception").
-The regulatory corpus text is drawn from public Japanese government/medical-society sources
-(e-Gov Japan, FDMA, JPTEC); `corpus.jsonl` records each chunk's `source_url`.
+* **Annotations & corpus** (this repository) — original work, released under **CC-BY-NC-4.0**,
+  matching the license of the underlying MM-AU source material.
+* **MM-AU source video/frames** — CC-BY-NC-4.0, licensed by its authors; see
+  [their repository](https://github.com/jeffreychou777/LOTVS-MM-AU) for full terms.
+* **Regulatory corpus text** — drawn from public Japanese government/medical-society sources
+  (e-Gov Japan, FDMA, JPTEC); `corpus.jsonl` records each chunk's `source_url`.
