@@ -7,8 +7,8 @@ generation. This repository is the dataset release: 500 human-annotated accident
 19-rule Japanese regulatory corpus (Road Traffic Act, FDMA urgency-triage manual, JPTEC trauma
 guidelines) the annotations are grounded in.
 
-See [`docs/`](docs/) (published as GitHub Pages) for an overview of the dataset and how it's
-structured.
+See [the project page](https://adhipradhana.github.io/DispatchRAG/) for a visual overview of the
+dataset and how it's structured.
 
 **No video is included in this repository.** Clips are derived from the public
 [MM-AU (LOTVS-MM-AU)](https://github.com/jeffreychou777/LOTVS-MM-AU) dataset
