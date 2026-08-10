@@ -143,3 +143,16 @@ the lead-up context.
   [their repository](https://github.com/jeffreychou777/LOTVS-MM-AU) for full terms.
 * **Regulatory corpus text** — drawn from public Japanese government/medical-society sources
   (e-Gov Japan, FDMA, JPTEC); `corpus.jsonl` records each chunk's `source_url`.
+
+## Citation
+
+If you use this dataset, please cite the paper: [arXiv:2607.23132](https://arxiv.org/abs/2607.23132)
+
+```bibtex
+@article{adhipradhana2026dispatchrag,
+  title={DispatchRAG: Grounding Emergency Dispatch Decisions in Real-World Protocols from Traffic Accident Video},
+  author={Adhipradhana, Muhammad Sulthan and Javanmardi, Ehsan and Bao, Naren and Tsukada, Manabu},
+  journal={arXiv preprint arXiv:2607.23132},
+  year={2026}
+}
+```
