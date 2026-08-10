@@ -181,6 +181,6 @@
       50
     ],
     "path_hint": "CAP-DATA/3/014325/images/",
-    "note": "Path relative to the MM-AU CAP-DATA root (github.com/jeffreychou777/LOTVS-MM-AU). frame_range is the [start,end] frame-index window (inclusive-exclusive as extracted) this annotation/clip covers within that source video."
+    "note": "Path relative to the MM-AU CAP-DATA root (github.com/jeffreychou777/LOTVS-MM-AU). The annotation was made watching the WHOLE source video (all frames under path_hint, lead-up + accident), not just frame_range. frame_range is MM-AU's own abnormal-event sub-window within that full video (marks where the crash happens), kept for reference."
   }
 }

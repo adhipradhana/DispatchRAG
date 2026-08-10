@@ -118,13 +118,17 @@ Medical Center field protocols). Each chunk has `chunk_id`, `text_ja` (source la
 This repository intentionally does **not** redistribute video. `annotations/*.json` files are
 named `{video_id:06d}.json`, where `video_id` is MM-AU's own video numbering (unique across all
 500 clips in this dataset; also duplicated in each file's `mmau_source` field, along with the
-`type_id` and `frame_range` needed to locate the exact clip window). To recover the source frames:
+`type_id`). To recover the source frames:
 
 1. Download MM-AU's **CAP-DATA** split from the [official repo](https://github.com/jeffreychou777/LOTVS-MM-AU)
    (chunked archive; see their README for merge/extract instructions).
 2. Locate `CAP-DATA/<type_id>/<video_id:06d>/images/` using the `mmau_source.path_hint` field.
-3. `frame_range` gives the `[start, end]` frame-index window this annotation covers within that
-   source video.
+
+**Each annotation was made watching the whole source video** (every frame under that path — the
+lead-up as well as the accident itself), not a trimmed window; urgency triage in particular needs
+the lead-up context. `mmau_source.frame_range` is MM-AU's own abnormal-event sub-window within
+that full video (marking roughly where the crash happens), kept for reference — it is not the
+scope of the annotation.
 
 ## 👍 Acknowledgement
 
