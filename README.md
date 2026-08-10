@@ -94,7 +94,6 @@ Each file in `annotations/` is one clip:
   "mmau_source": {                                    // provenance back to the original MM-AU video
     "video_id": 1,
     "type_id": 10,
-    "frame_range": [18, 50],
     "path_hint": "CAP-DATA/10/000001/images/",
     "note": "Path relative to the MM-AU CAP-DATA root ..."
   }
@@ -126,9 +125,7 @@ named `{video_id:06d}.json`, where `video_id` is MM-AU's own video numbering (un
 
 **Each annotation was made watching the whole source video** (every frame under that path — the
 lead-up as well as the accident itself), not a trimmed window; urgency triage in particular needs
-the lead-up context. `mmau_source.frame_range` is MM-AU's own abnormal-event sub-window within
-that full video (marking roughly where the crash happens), kept for reference — it is not the
-scope of the annotation.
+the lead-up context.
 
 ## 👍 Acknowledgement
 

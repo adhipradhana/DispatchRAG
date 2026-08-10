@@ -180,7 +180,7 @@
     "pov_2": { "do": [...], "warn": [...], "dont": [...] },
     "pov_3": { "mechanism": {...}, "load_and_go": "...", "check": [...] }
   },
-  "mmau_source": { "video_id": 1, "type_id": 10, "frame_range": [18, 50],
+  "mmau_source": { "video_id": 1, "type_id": 10,
                    "path_hint": "CAP-DATA/10/000001/images/" }
 }</code></pre>
     <p class="note">See the repository <a href="https://github.com/">README</a> for the full field
@@ -195,10 +195,7 @@
       <code>type_id</code> numbering (<code>mmau_source</code> field) so it can be matched back to
       the original frames by anyone who has downloaded MM-AU directly from its authors.</p>
     <p><strong>Each annotation was made watching the whole source video</strong> (every frame,
-      lead-up as well as the accident itself) — urgency triage needs the lead-up context.
-      <code>mmau_source.frame_range</code> is MM-AU's own abnormal-event sub-window within that
-      full video (roughly where the crash happens), kept for reference; it is not the scope of
-      the annotation.</p>
+      lead-up as well as the accident itself) — urgency triage needs the lead-up context.</p>
   </section>
 
   <section>
