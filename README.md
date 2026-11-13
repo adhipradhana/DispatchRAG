@@ -1,11 +1,14 @@
 # DispatchRAG
 
-**DispatchRAG** is a retrieval-grounded framework for turning a dashcam accident clip into a
+**DispatchRAG** (APSIPA ASC 2026 — **Best Paper Award** 🏆) is a retrieval-grounded framework for turning a dashcam accident clip into a
 structured, three-audience emergency-dispatch plan (dispatcher / civilian bystander / arriving
 ambulance crew), with every directive grounded in a cited regulatory rule rather than free
 generation. This repository is the dataset release: 500 human-annotated accident clips and the
 19-rule Japanese regulatory corpus (Road Traffic Act, FDMA urgency-triage manual, JPTEC trauma
 guidelines) the annotations are grounded in.
+
+> 🏆 **Our paper has been accepted at APSIPA ASC 2026 and won the Best Paper Award.**
+> Paper: [arXiv:2607.23132](https://arxiv.org/abs/2607.23132)
 
 See [the project page](https://adhipradhana.github.io/DispatchRAG/) for a visual overview of the
 dataset and how it's structured.
@@ -146,13 +149,18 @@ the lead-up context.
 
 ## Citation
 
-If you use this dataset, please cite the paper: [arXiv:2607.23132](https://arxiv.org/abs/2607.23132)
+If you use this dataset, please cite our paper, published at APSIPA ASC 2026 (**Best Paper Award**): [arXiv:2607.23132](https://arxiv.org/abs/2607.23132)
 
 ```bibtex
-@article{adhipradhana2026dispatchrag,
+@inproceedings{adhipradhana2026dispatchrag,
   title={DispatchRAG: Grounding Emergency Dispatch Decisions in Real-World Protocols from Traffic Accident Video},
   author={Adhipradhana, Muhammad Sulthan and Javanmardi, Ehsan and Bao, Naren and Tsukada, Manabu},
-  journal={arXiv preprint arXiv:2607.23132},
-  year={2026}
+  booktitle={Proceedings of the Asia Pacific Signal and Information Processing Association Annual Summit and Conference (APSIPA ASC)},
+  address={Bangkok, Thailand},
+  month=nov,
+  year={2026},
+  note={Best Paper Award},
+  eprint={2607.23132},
+  archivePrefix={arXiv}
 }
 ```
